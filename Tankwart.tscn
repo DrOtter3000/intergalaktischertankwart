@@ -1,0 +1,216 @@
+[gd_scene load_steps=15 format=2]
+
+[ext_resource path="res://Tankwart.gd" type="Script" id=1]
+[ext_resource path="res://sagan.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://Saiyan-Sans.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://Rabbid-Highway-Sign.ttf" type="DynamicFontData" id=4]
+[ext_resource path="res://photo_2021-02-11_17-32-36.jpg" type="Texture" id=5]
+[ext_resource path="res://Electronic World - Loop.ogg" type="AudioStream" id=6]
+
+[sub_resource type="DynamicFont" id=1]
+size = 50
+outline_size = 5
+outline_color = Color( 0.192157, 0.701961, 0.839216, 1 )
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 120
+outline_size = 5
+outline_color = Color( 0.894118, 0.207843, 0.882353, 1 )
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 120
+outline_size = 5
+outline_color = Color( 0.396078, 1, 0.152941, 1 )
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 100
+outline_size = 5
+outline_color = Color( 0.184314, 0.74902, 0.945098, 1 )
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=5]
+size = 110
+outline_size = 5
+outline_color = Color( 0.866667, 0.952941, 0.109804, 1 )
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=6]
+size = 110
+outline_size = 5
+outline_color = Color( 0.803922, 0.168627, 0.168627, 1 )
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=7]
+size = 110
+outline_size = 5
+outline_color = Color( 0.666667, 0.117647, 0.980392, 1 )
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=8]
+outline_size = 3
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 4 )
+
+[node name="Tankwart" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 5 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Logotextseuche" type="Label" parent="."]
+anchor_right = 1.0
+margin_top = 50.0
+margin_bottom = 47.0
+custom_fonts/font = SubResource( 1 )
+text = "Intergalaktischer Tankwart"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ActionText" type="Label" parent="."]
+margin_left = 779.091
+margin_top = 121.455
+margin_right = 933.091
+margin_bottom = 241.455
+custom_fonts/font = SubResource( 2 )
+text = "wow"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ActionText2" type="Label" parent="."]
+margin_left = 71.1225
+margin_top = 374.918
+margin_right = 260.122
+margin_bottom = 494.918
+custom_fonts/font = SubResource( 3 )
+text = "yeah"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ActionText3" type="Label" parent="."]
+margin_left = 487.684
+margin_top = 434.895
+margin_right = 615.684
+margin_bottom = 534.895
+custom_fonts/font = SubResource( 4 )
+text = "cool"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ActionText4" type="Label" parent="."]
+margin_left = 380.0
+margin_top = 146.0
+margin_right = 420.0
+margin_bottom = 160.0
+custom_fonts/font = SubResource( 5 )
+text = "geil"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ActionText5" type="Label" parent="."]
+margin_left = 94.7322
+margin_top = 145.278
+margin_right = 256.732
+margin_bottom = 256.278
+custom_fonts/font = SubResource( 6 )
+text = "Nice"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ActionText6" type="Label" parent="."]
+margin_left = 774.847
+margin_top = 416.285
+margin_right = 934.847
+margin_bottom = 527.285
+custom_fonts/font = SubResource( 7 )
+text = "fett"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+margin_top = 279.0
+margin_right = 1024.0
+margin_bottom = 279.0
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer"]
+margin_left = 314.0
+margin_right = 710.0
+margin_bottom = 50.0
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer"]
+margin_right = 396.0
+margin_bottom = 26.0
+custom_fonts/font = SubResource( 8 )
+text = "Krätschmers Kasettenkaschemme"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="HBoxContainer/VBoxContainer"]
+margin_top = 30.0
+margin_right = 396.0
+margin_bottom = 50.0
+text = "Auftanken"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 6 )
+volume_db = -9.967
+autoplay = true
+
+[node name="Credits" type="Label" parent="."]
+margin_left = 6.53632
+margin_top = 545.761
+margin_right = 313.536
+margin_bottom = 593.761
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
+text = "Music: \"Electronic World\" by Marcelo Fernández
+Art: xtristrix
+Code: xtristrix"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Version" type="Label" parent="."]
+margin_left = 978.224
+margin_top = 580.763
+margin_right = 1018.22
+margin_bottom = 594.763
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
+text = "v1.1.1"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/Button" to="." method="_on_Button_pressed"]

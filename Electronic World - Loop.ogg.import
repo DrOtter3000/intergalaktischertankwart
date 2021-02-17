@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Electronic World - Loop.ogg-882a2ca0061c634689d4a2812fd0fcaf.oggstr"
+
+[deps]
+
+source_file="res://Electronic World - Loop.ogg"
+dest_files=[ "res://.import/Electronic World - Loop.ogg-882a2ca0061c634689d4a2812fd0fcaf.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
